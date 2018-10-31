@@ -1,0 +1,9 @@
+TARGETNAME=DDK_HelloWorld
+TARGETTYPE=DRIVER
+TARGETPATH=SYS
+
+#WDKPATH=C:\WinDDK\7600.16385.1 -- build -c 
+INCLUDES=$(WDKPATH)\inc;\
+      $(WDKPATH)\inc\wxp;\
+
+SOURCES=mini_ddk.c\

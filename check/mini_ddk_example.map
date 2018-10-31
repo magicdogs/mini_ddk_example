@@ -1,0 +1,42 @@
+ mini_ddk_example
+
+ Timestamp is 5bd92782 (Wed Oct 31 11:54:42 2018)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000006H .text$mn                CODE
+ 0002:00000000 00000008H .idata$5                DATA
+ 0002:00000010 00000038H .rdata                  DATA
+ 0002:00000048 0000005cH .rdata$debug            DATA
+ 0003:00000000 00000045H .data                   DATA
+ 0004:00000000 00000053H INIT                    CODE
+ 0004:00000054 00000014H .idata$2                CODE
+ 0004:00000068 00000014H .idata$3                CODE
+ 0004:0000007c 00000008H .idata$4                CODE
+ 0004:00000084 0000001aH .idata$6                CODE
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___guard_fids_count        00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___guard_flags             00000000     <absolute>
+ 0000:00000000       ___guard_fids_table        00000000     <absolute>
+ 0001:00000000       _DbgPrint                  00011000 f   ntoskrnl:ntoskrnl.exe
+ 0002:00000000       __imp__DbgPrint            00012000     ntoskrnl:ntoskrnl.exe
+ 0002:00000004       \177ntoskrnl_NULL_THUNK_DATA 00012004     ntoskrnl:ntoskrnl.exe
+ 0004:00000000       _DDK_Unload@4              00014000 f   mini_ddk.obj
+ 0004:00000030       _DriverEntry@8             00014030 f   mini_ddk.obj
+ 0004:00000054       __IMPORT_DESCRIPTOR_ntoskrnl 00014054     ntoskrnl:ntoskrnl.exe
+ 0004:00000068       __NULL_IMPORT_DESCRIPTOR   00014068     ntoskrnl:ntoskrnl.exe
+
+ entry point at        0000:00000000
+
+ Static symbols
+
+ 0000:ffffa000       .debug$S                   00010000     ntoskrnl:ntoskrnl.exe
+ 0003:00000000       $SG21156                   00013000     mini_ddk.obj
+ 0003:0000001c       $SG21160                   0001301c     mini_ddk.obj
+ 0003:0000003c       $SG21161                   0001303c     mini_ddk.obj
+ 0004:00000090       .idata$6                   00014090     ntoskrnl:ntoskrnl.exe
